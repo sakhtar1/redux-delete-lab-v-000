@@ -4,7 +4,7 @@ import { connect } from 'react-redux'
 
 const Band = (props) => {
   const bands = props.bands.map((band, index) =>
-    <li delete={this.props.delete)key={index.id}>{band} </li> ); 
+    <Band delete={this.props.delete)key={index.id} {band}/> ); 
 
   return (
     <div>
