@@ -3,15 +3,15 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux'
 
 const Band = (props) => {
-  const bands = props.bands.map((band, index) => 
+  const bands = props.bands.map((band, index) =>
     <li delete={this.props.delete)key={index.id}>{band} </li> ); 
-    
+
   return (
     <div>
      {bands}
     </div>
   )
-  
+
 };
 
 const mapDispatchToProps = dispatch => ({
