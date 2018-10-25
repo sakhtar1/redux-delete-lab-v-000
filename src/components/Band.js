@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 class Band extends Component {
+import { connect } from 'react-redux'
 
   render() {
     return(
@@ -11,4 +12,9 @@ class Band extends Component {
   }
 };
 
-export default Band;
+const mapDispatchToProps = dispatch => ({
+  addBand: name => dispatch({ type: "DELETE_BAND", action.id })
+})
+
+export default connect(mapDispatchToProps)(Band)
+
