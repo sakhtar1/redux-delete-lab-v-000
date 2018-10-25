@@ -1,15 +1,17 @@
 import React, { Component } from 'react';
 
-class Band extends Component {
 import { connect } from 'react-redux'
 
-  render() {
-    return(
-      <div>
-        Band Component
-      </div>
-    );
-  }
+const Band = (props) => {
+  const bands = props.bands.map((band, index) => 
+    <li delete={this.props.delete)key={index.id}>{band} </li> ); 
+    
+  return (
+    <div>
+     {bands}
+    </div>
+  )
+  
 };
 
 const mapDispatchToProps = dispatch => ({
@@ -17,4 +19,3 @@ const mapDispatchToProps = dispatch => ({
 })
 
 export default connect(mapDispatchToProps)(Band)
-
